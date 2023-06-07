@@ -3,9 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LettersCalculator extends Component {
-  state = {
-    count: '',
-  }
+  state = {count: ''}
 
   onChangeValue = event => {
     this.setState({count: event.target.value})
@@ -23,7 +21,7 @@ class LettersCalculator extends Component {
           <input
             id="letter"
             className="input-value"
-            type="search"
+            type="text"
             placeholder="Enter the phrase"
             onChange={this.onChangeValue}
           />
