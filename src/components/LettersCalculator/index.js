@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LettersCalculator extends Component {
-  state = {count: ''}
+  state = {count: '0'}
 
   onChangeValue = event => {
     this.setState({count: event.target.value})
@@ -26,9 +26,9 @@ class LettersCalculator extends Component {
             placeholder="Enter the phrase"
             onChange={this.onChangeValue}
           />
-          <button className="button" type="button">
+          <p className="button" type="button">
             No.of Letters : {count.length}
-          </button>
+          </p>
         </div>
         <div className="img-container">
           <img
