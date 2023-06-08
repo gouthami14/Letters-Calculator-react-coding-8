@@ -5,7 +5,8 @@
   background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .body-container {
   display: flex;
@@ -22,9 +23,14 @@
     font-size: 30px;
   }
 }
+.letter {
+  color: #e4e7eb;
+  font-size: 12px;
+  font-family: 'Roboto';
+}
 .input-value {
   color: #e4e7eb;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'Roboto';
 }
 @media screen and (min-width: 768px) {
@@ -33,6 +39,7 @@
   }
 }
 .button {
+  margin-top: 20px;
   background-color: #ffffff;
   color: #219a6f;
   font-size: 12px;
@@ -44,6 +51,7 @@
 }
 @media screen and (min-width: 768px) {
   .button {
+    margin-top: 25px;
     height: 50px;
     width: 100px;
     border-radius: 15px;
