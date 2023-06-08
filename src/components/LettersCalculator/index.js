@@ -8,6 +8,7 @@ class LettersCalculator extends Component {
   onChangeValue = event => {
     this.setState({count: event.target.value})
   }
+
   render() {
     const {count} = this.state
     return (
@@ -17,7 +18,7 @@ class LettersCalculator extends Component {
             Calculate the
             <br /> letters <br /> you enter
           </h1>
-          <label htmlFor="letter">Enter the phrase"</label>
+          <label htmlFor="letter">Enter the phrase</label>
           <input
             id="letter"
             className="input-value"
